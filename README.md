@@ -1,6 +1,6 @@
 # rEFInd rich black theme
 
-A simple black theme for rEFInd
+![screenshot](screenshot.png)
 
 ## Installation
 
@@ -19,13 +19,13 @@ A simple black theme for rEFInd
 3. To adjust icon size and font size edit `theme.conf`.
 
    ```bash
-   sudoedit /boot/EFI/refind/refind-theme/theme.conf
+   sudo nano /boot/EFI/refind/refind-theme/theme.conf
    ```
 
 4. To enable the theme add `include refind-theme/theme.conf` at the end of `refind.conf`.
 
    ```bash
-   sudoedit /boot/EFI/refind/refind.conf
+   sudo nano /boot/EFI/refind/refind.conf
    ```
 
 [rEFInd](http://www.rodsbooks.com/refind/) The official rEFInd website
