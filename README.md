@@ -28,4 +28,23 @@
    sudo nano /boot/EFI/refind/refind.conf
    ```
 
+```bash
+menuentry "Arch Linux" {
+   icon /EFI/refind/refind-theme/icons/os_arch.png
+   loader vmlinuz-linux
+   initrd initramfs-linux.img
+   options "rw root=UUID=dfb2919d-ff78-48db-a8a7-23f7542c343a loglevel=3"
+}
+
+menuentry "Windows" {
+   icon /EFI/refind/refind-theme/icons/os_win.png
+   loader /EFI/Microsoft/Boot/bootmgfw.efi
+}
+
+menuentry "OSX" {
+   icon /EFI/refind/refind-theme/icons/os_mac.png
+   loader /EFI/Apple/Boot/bootmgfw.efi
+}
+```
+
 [rEFInd](http://www.rodsbooks.com/refind/) The official rEFInd website
